@@ -14,7 +14,7 @@ export default function OrbAvatar() {
       </div>
       <div className="relative w-56 h-56 rounded-full overflow-hidden border-4 border-white/10 backdrop-blur-xl">
         <Image
-          src="/red-lololol.jpeg"
+          src="/59acd182-8c29-4641-8891-b6767cd66a83.jpg"
           alt="Profile"
           fill
           className="object-cover"

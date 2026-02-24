@@ -8,45 +8,41 @@ import {
   MobileNavHeader,
   MobileNavToggle,
   MobileNavMenu,
-} from "@/components/resizable-navbar"
+} from "@/components/resizable-navbar";
 import { useState } from "react";
+import { ModeToggle } from "./toggle-component";
 
 export function NavbarDemo() {
   const navItems = [
-    {
-      name: "About",
-      link: "#about",
-    },
-    {
-      name: "Tech Stack",
-      link: "#tech",
-    },
-    {
-      name: "Projects",
-      link: "#projects",
-    },
-    {
-      name: "Contact",
-      link: "#contact",
-    },
+    { name: "About", link: "#about" },
+    { name: "Tech Stack", link: "#tech" },
+    { name: "Projects", link: "#projects" },
+    { name: "Contact", link: "#contact" },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative w-full">
+    <div className="relative z-50 w-full">
       <Navbar>
         <NavBody>
           <NavbarLogo />
-          <NavItems items={navItems} />
+          <div className="flex items-center gap-4">
+            <NavItems items={navItems} />
+            <ModeToggle />
+          </div>
         </NavBody>
+
         <MobileNav>
           <MobileNavHeader>
             <NavbarLogo />
-            <MobileNavToggle
-              isOpen={isMobileMenuOpen}
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            />
+            <div className="flex items-center gap-2">
+              <ModeToggle />
+              <MobileNavToggle
+                isOpen={isMobileMenuOpen}
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              />
+            </div>
           </MobileNavHeader>
 
           <MobileNavMenu
@@ -58,9 +54,9 @@ export function NavbarDemo() {
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-black dark:text-neutral-300"
+                className="relative text-black dark:text-white font-medium py-2 font-funnel mx-auto"
               >
-                <span className="block">{item.name}</span>
+                {item.name}
               </a>
             ))}
           </MobileNavMenu>
@@ -69,4 +65,3 @@ export function NavbarDemo() {
     </div>
   );
 }
-

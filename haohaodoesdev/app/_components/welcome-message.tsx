@@ -10,7 +10,7 @@ export default function WelcomeMessage() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-4xl md:text-6xl font-bold tracking-tight"
+          className="text-4xl md:text-6xl font-bold tracking-tight font-funnel"
         >
           HaoHaoDoesDev
         </motion.h1>

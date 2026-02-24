@@ -4,7 +4,7 @@ import OrbAvatar from "@/components/orb-avatar";
 
 export default function WelcomeMessage() {
   return (
-    <main  className="flex flex-col items-center justify-center text-center px-6 mt-16">
+    <section className="flex flex-col items-center justify-center text-center px-6 min-h-[80vh]">
       <OrbAvatar/>
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
@@ -26,7 +26,7 @@ export default function WelcomeMessage() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="max-w-2xl text-gray-400 mt-6 leading-relaxed"
+          className="max-w-2xl dark:text-gray-400 text-black mt-6 leading-relaxed"
         >
           Full-Stack Engineer with a specialized edge in architecting scalable Go (Golang) microservices and high-impact Mobile & Web AI applications
         </motion.p>
@@ -38,6 +38,6 @@ export default function WelcomeMessage() {
         >
           Contact Me
         </motion.button>
-    </main>
+    </section>
   );
 }

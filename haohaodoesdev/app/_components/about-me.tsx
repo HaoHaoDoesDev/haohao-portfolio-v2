@@ -11,27 +11,30 @@ export default function AboutMeSegment() {
             viewport={{ once: true }}
         >
         <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold">
+            <h2 className="text-4xl md:text-5xl font-bold dark:text-white text-black">
             About Me
             </h2>
 
             <p className="text-cyan-600 mt-2 text-sm tracking-wide">
             Get to know me
             </p>
-            <p className="mt-10 text-gray-800 leading-relaxed">
-            Hi there! I’m Junhao, a passionate Full-Stack Engineer specializing in architecting scalable Go (Golang) microservices and
-             high-impact Mobile AI applications. With a focus on creating clean, user-friendly, and visually engaging digital experiences, 
-             I love refining UI interactions and making applications feel smooth and intuitive.
+            <p className="mt-10 dark:text-gray-400 text-black leading-relaxed">
+            Hi there! I’m Junhao, a Information Technology student and full-stack developer passionate about building clean, 
+            scalable, and user-focused applications. I enjoy transforming complex ideas into intuitive digital experiences, 
+            whether it’s a modern web platform, a mobile app, or an AI-powered solution.
             </p>
-            <p className="mt-6 text-gray-800 leading-relaxed">
-            I bring a blend of technical expertise and creativity to every project, whether I’m designing decoupled backends with Docker and Supabase or 
-            building hybrid AI vision systems to enhance accessibility via React Native and the Gemini API.
-             My experience spans the entire stack, from solving complex problems like hardware SDK reverse-engineering to turning concepts into polished,
-              real-world solutions that drive results.
+            <p className="mt-6 dark:text-gray-400 text-black leading-relaxed">
+            I bring a blend of technical expertise and creativity to every project. I have hands-on experience developing applications using React,
+             React Native, TailwindCSS, Zustand, Firebase, Supabase, and PostgreSQL, with a strong focus on modular architecture and maintainable code. 
+            I’ve worked on projects involving authentication systems, real-time data handling, role-based routing, AI integrations, and responsive UI systems.
             </p>
-            <p className="mt-6 text-gray-800 leading-relaxed">
-            I’m always eager to learn and driven by a curiosity for new technologies. Let’s work together to bridge complex technical infrastructure with seamless,
-             user-centric experiences. Get in touch, and let’s start turning your vision into a reality!
+            <p className="mt-6 dark:text-gray-400 text-black leading-relaxed">
+            Recently, I’ve been building full-stack applications that combine frontend performance with backend reliability, 
+            including fitness tracking platforms, internship management portals, and AI-enhanced mobile apps.
+            </p>
+            <p className="mt-6 dark:text-gray-400 text-black leading-relaxed">
+            I’m constantly refining my problem-solving skills through technical challenges and real-world projects, 
+            and I enjoy optimizing both user experience and developer experience.
             </p>
             <div className="mt-10">
             <motion.button

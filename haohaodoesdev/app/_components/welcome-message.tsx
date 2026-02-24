@@ -28,7 +28,7 @@ export default function WelcomeMessage() {
   ];
 
   return (
-    <section className="flex flex-col items-center justify-center text-center px-6 min-h-[80vh]">
+    <section className="flex flex-col items-center justify-center text-center px-6 min-h-screen">
       <OrbAvatar />
       <motion.h1
         initial={{ opacity: 0, y: 40 }}

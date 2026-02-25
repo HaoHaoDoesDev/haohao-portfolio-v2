@@ -2,7 +2,7 @@
 
 export default function ContactHeader() {
   return (
-    <div className="max-w-3xl mx-auto text-center">
+    <div id="contact" className="max-w-3xl mx-auto text-center scroll-mt-34">
       <h2 className="text-4xl md:text-5xl font-bold dark:text-white text-black">
         Collaboration
       </h2>

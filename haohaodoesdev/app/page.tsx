@@ -5,6 +5,11 @@ import AboutMeSegment from "./_components/about-me";
 import TechnicalSkills from "./_components/tech-stack/technical-skills-segment";
 import SoftSkills from "./_components/tech-stack/soft-skills";
 import Squares from "@/components/grid-background";
+import ProjectsSegment from "./_components/projects/projects-page";
+import ContactHeader from "./_components/contact-segment/_components/contact-header";
+import ContactInformation from "./_components/contact-segment/_components/contact-information";
+import TestimonialContent from "./_components/contact-segment/_components/testimonial-segment/page";
+import ContactIcons from "./_components/contact-segment/_components/contact-icons";
 
 export default function Home() {
   return (
@@ -24,6 +29,11 @@ export default function Home() {
         <AboutMeSegment />
         <TechnicalSkills />
         <SoftSkills />
+        <ProjectsSegment/>
+        <ContactHeader/>
+        <ContactInformation/>
+        <TestimonialContent/>
+        <ContactIcons/>
       </div>
       
     </main>

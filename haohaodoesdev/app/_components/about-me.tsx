@@ -37,14 +37,20 @@ export default function AboutMeSegment() {
             and I enjoy optimizing both user experience and developer experience.
             </p>
             <div className="mt-10">
-            <motion.button
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
-                className="mt-8 px-8 py-3 rounded-full border font-semibold border-cyan-400 text-cyan-500 hover:bg-cyan-600 hover:text-white hover:font-semibold transition"
-                >
-                Download Resume
-            </motion.button>
+              <a 
+                href="/cv/CV_Updated_24-02-26.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <motion.button
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5 }}
+                    className="mt-8 px-8 py-3 rounded-full border font-semibold border-cyan-400 text-cyan-500 hover:bg-cyan-600 hover:text-white hover:font-semibold transition cursor-pointer"
+                    >
+                    View Resume
+                </motion.button>
+              </a>
             </div>
 
         </div>

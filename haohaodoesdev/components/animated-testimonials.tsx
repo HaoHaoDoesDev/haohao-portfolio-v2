@@ -1,7 +1,7 @@
 "use client";
 
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
-import { motion, AnimatePresence } from "framer-motion"; // Changed from motion/react for standard compatibility
+import { motion, AnimatePresence } from "framer-motion"; 
 import Image from "next/image";
 import { useEffect, useState, useCallback, useMemo } from "react";
 
@@ -20,6 +20,13 @@ export const AnimatedTestimonials = ({
   autoplay?: boolean;
 }) => {
   const [active, setActive] = useState(0);
+  
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const handleNext = useCallback(() => {
     setActive((prev) => (prev + 1) % testimonials.length);
   }, [testimonials.length]);
@@ -57,13 +64,13 @@ export const AnimatedTestimonials = ({
                     opacity: 0,
                     scale: 0.9,
                     z: -100,
-                    rotate: rotations[index],
+                    rotate: mounted ? rotations[index] : 0,
                   }}
                   animate={{
                     opacity: isActive(index) ? 1 : 0.7,
                     scale: isActive(index) ? 1 : 0.95,
                     z: isActive(index) ? 0 : -100,
-                    rotate: isActive(index) ? 0 : rotations[index],
+                    rotate: isActive(index) ? 0 : (mounted ? rotations[index] : 0),
                     zIndex: isActive(index)
                       ? 40
                       : testimonials.length + 2 - index,
@@ -73,7 +80,7 @@ export const AnimatedTestimonials = ({
                     opacity: 0,
                     scale: 0.9,
                     z: 100,
-                    rotate: rotations[index],
+                    rotate: mounted ? rotations[index] : 0,
                   }}
                   transition={{
                     duration: 0.4,
@@ -97,22 +104,10 @@ export const AnimatedTestimonials = ({
           <AnimatePresence mode="wait">
             <motion.div
               key={active}
-              initial={{
-                y: 20,
-                opacity: 0,
-              }}
-              animate={{
-                y: 0,
-                opacity: 1,
-              }}
-              exit={{
-                y: -20,
-                opacity: 0,
-              }}
-              transition={{
-                duration: 0.2,
-                ease: "easeInOut",
-              }}
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -20, opacity: 0 }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
             >
               <h3 className="text-2xl font-bold text-black dark:text-white font-funnel">
                 {testimonials[active].name}
@@ -124,21 +119,9 @@ export const AnimatedTestimonials = ({
                 {testimonials[active].quote.split(" ").map((word, index) => (
                   <motion.span
                     key={index}
-                    initial={{
-                      filter: "blur(10px)",
-                      opacity: 0,
-                      y: 5,
-                    }}
-                    animate={{
-                      filter: "blur(0px)",
-                      opacity: 1,
-                      y: 0,
-                    }}
-                    transition={{
-                      duration: 0.2,
-                      ease: "easeInOut",
-                      delay: 0.02 * index,
-                    }}
+                    initial={{ filter: "blur(10px)", opacity: 0, y: 5 }}
+                    animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
+                    transition={{ duration: 0.2, ease: "easeInOut", delay: 0.02 * index }}
                     className="inline-block"
                   >
                     {word}&nbsp;

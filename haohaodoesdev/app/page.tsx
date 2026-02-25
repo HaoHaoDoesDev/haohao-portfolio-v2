@@ -5,6 +5,7 @@ import AboutMeSegment from "./_components/about-me";
 import TechnicalSkills from "./_components/tech-stack/technical-skills-segment";
 import SoftSkills from "./_components/tech-stack/soft-skills";
 import Squares from "@/components/grid-background";
+import ProjectsSegment from "./_components/projects/projects-page";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <AboutMeSegment />
         <TechnicalSkills />
         <SoftSkills />
+        <ProjectsSegment/>
       </div>
       
     </main>

@@ -60,7 +60,7 @@ export default function ProjectsSegment() {
             My Projects
             </h2>
 
-            <p className="text-cyan-600 mt-2 text-sm tracking-wide font-semibold">
+            <p className="text-cyan-500 mt-2 text-sm tracking-wide font-semibold">
             WHAT I&rsquo;VE WORKED ON
             </p>
             <div className="mt-8 flex-col space-y-4">

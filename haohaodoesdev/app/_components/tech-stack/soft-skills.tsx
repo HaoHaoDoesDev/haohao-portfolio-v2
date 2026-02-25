@@ -47,7 +47,7 @@ export default function SoftSkills() {
         <div className="font-sans text-center text-5xl text-black dark:text-white font-extrabold">
           Generic
         </div>
-        <div className="font-funnel text-center text-sm text-cyan-500 dark:text-cyan-600 font-semibold mt-2">
+        <div className="font-funnel text-center text-sm text-cyan-500 font-semibold mt-2">
           MY PERSONAL QUALITIES
         </div>
       </div>

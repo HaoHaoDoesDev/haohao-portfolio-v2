@@ -23,6 +23,7 @@ const Languages = [
 ];
 const FrontEnd = [
   { id: 1, name: "React", icon: "logos:react" },
+  { id: 1, name: "React Native", icon: "devicon:reactnative-wordmark" },
   { id: 2, name: "Tailwind CSS", icon: "logos:tailwindcss-icon" },
   { id: 3, name: "Framer Motion", icon: "devicon:framermotion" },
   { id: 4, name: "Vue.js", icon: "logos:vue" },
@@ -30,6 +31,7 @@ const FrontEnd = [
   { id: 6, name: "Zustand", icon: "devicon:zustand" },
   { id: 7, name: "Three.js", icon: "devicon:threejs" },
   { id: 8, name: "Next.js", icon: "devicon:nextjs" },
+  { id: 9, name: "Expo", icon: "file-icons:expo" },
 ];
 const BackEnd = [
   { id: 1, name: "Firebase", icon: "logos:firebase-icon" },
@@ -39,6 +41,7 @@ const BackEnd = [
   { id: 5, name: "MongoDB", icon: "devicon:mongodb" },
   { id: 6, name: "PostgreSQL", icon: "lineicons:postgresql" },
   { id: 7, name: "MySQL", icon: "simple-icons:mysql" },
+  { id: 8, name: "Supabase", icon: "devicon:supabase" },
 ];
 const Others = [
   { id: 1, name: "Adobe Photoshop", icon: "devicon:photoshop" },

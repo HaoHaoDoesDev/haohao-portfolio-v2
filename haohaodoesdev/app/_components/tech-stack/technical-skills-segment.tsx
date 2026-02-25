@@ -62,21 +62,21 @@ export default function TechnicalSkills() {
           WHAT I BRING TO THE TABLE
         </div>
       </div>
-      <div className="text-xl font-funnel text-white text-center">FEATURED</div>
+      <div className="text-xl font-funnel text-black dark:text-white text-center">FEATURED</div>
       <SkillsCards skills={FeaturedSkills} />
-      <div className="text-xl font-funnel text-white text-center pt-8">
+      <div className="text-xl font-funnel text-black dark:text-white text-center pt-8">
         LANGUAGES
       </div>
       <SkillsCards skills={Languages} />
-      <div className="text-xl font-funnel text-white text-center pt-8">
+      <div className="text-xl font-funnel text-black dark:text-white text-center pt-8">
         FRONT-END
       </div>
       <SkillsCards skills={FrontEnd} />
-      <div className="text-xl font-funnel text-white text-center pt-8">
+      <div className="text-xl font-funnel text-black dark:text-white text-center pt-8">
         BACK-END
       </div>
       <SkillsCards skills={BackEnd} />
-      <div className="text-xl font-funnel text-white text-center pt-8">
+      <div className="text-xl font-funnel text-black dark:text-white text-center pt-8">
         OTHERS
       </div>
       <SkillsCards skills={Others} />

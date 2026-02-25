@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function AboutMeSegment() {
   return (
-    <main className="relative py-28 px-6 text-black">
+    <main id="about" className="relative py-28 px-6 text-black scroll-mt-24">
         <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -15,8 +15,8 @@ export default function AboutMeSegment() {
             About Me
             </h2>
 
-            <p className="text-cyan-600 mt-2 text-sm tracking-wide">
-            Get to know me
+            <p className="text-cyan-600 mt-2 text-sm tracking-wide font-semibold">
+            GET TO KNOW ME
             </p>
             <p className="mt-10 dark:text-gray-400 text-black leading-relaxed">
             Hi there! I’m Junhao, a Information Technology student and full-stack developer passionate about building clean, 

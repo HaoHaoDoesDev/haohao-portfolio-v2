@@ -23,15 +23,15 @@ const Languages = [
 ];
 const FrontEnd = [
   { id: 1, name: "React", icon: "logos:react" },
-  { id: 1, name: "React Native", icon: "devicon:reactnative-wordmark" },
-  { id: 2, name: "Tailwind CSS", icon: "logos:tailwindcss-icon" },
-  { id: 3, name: "Framer Motion", icon: "devicon:framermotion" },
-  { id: 4, name: "Vue.js", icon: "logos:vue" },
-  { id: 5, name: "Zod", icon: "logos:zod" },
-  { id: 6, name: "Zustand", icon: "devicon:zustand" },
-  { id: 7, name: "Three.js", icon: "devicon:threejs" },
-  { id: 8, name: "Next.js", icon: "devicon:nextjs" },
-  { id: 9, name: "Expo", icon: "file-icons:expo" },
+  { id: 2, name: "React Native", icon: "devicon:reactnative-wordmark" },
+  { id: 3, name: "Tailwind CSS", icon: "logos:tailwindcss-icon" },
+  { id: 4, name: "Framer Motion", icon: "devicon:framermotion" },
+  { id: 5, name: "Vue.js", icon: "logos:vue" },
+  { id: 6, name: "Zod", icon: "logos:zod" },
+  { id: 7, name: "Zustand", icon: "devicon:zustand" },
+  { id: 8, name: "Three.js", icon: "devicon:threejs" },
+  { id: 9, name: "Next.js", icon: "devicon:nextjs" },
+  { id: 10, name: "Expo", icon: "file-icons:expo" },
 ];
 const BackEnd = [
   { id: 1, name: "Firebase", icon: "logos:firebase-icon" },

@@ -8,7 +8,7 @@ export default function SkillsCards({ skills = defaultSkills }) {
       {skills.map((s) => (
         <article
           key={s.id ?? s.name}
-          className="flex items-center gap-3 bg-black backdrop-blur rounded-md p-4 shadow-md"
+          className="flex items-center gap-3 bg-black dark:bg-white/30 hover:border-cyan-400 backdrop-blur rounded-md p-4 shadow-md"
           aria-label={`${s.name} skill card`}
         >
           <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-white">

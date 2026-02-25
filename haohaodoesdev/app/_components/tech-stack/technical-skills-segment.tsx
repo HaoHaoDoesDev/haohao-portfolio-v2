@@ -50,13 +50,13 @@ const Others = [
 
 export default function TechnicalSkills() {
   return (
-    <div>
+    <div id="tech" className="scroll-mt-24">
       <div className="pt-20 pb-8">
-        <div className="font-funnel text-center text-gray-400">
-          WHAT I BRING TO THE TABLE
-        </div>
-        <div className="font-sans text-center text-5xl text-white font-extrabold">
+        <div className="font-sans text-center text-5xl text-black dark:text-white font-extrabold">
           Technical
+        </div>
+        <div className="font-funnel text-center text-sm text-cyan-500 font-semibold mt-2">
+          WHAT I BRING TO THE TABLE
         </div>
       </div>
       <div className="text-xl font-funnel text-white text-center">FEATURED</div>

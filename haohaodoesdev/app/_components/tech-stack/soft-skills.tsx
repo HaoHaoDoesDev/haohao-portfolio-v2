@@ -44,11 +44,11 @@ export default function SoftSkills() {
   return (
     <div className="pb-8">
       <div className="pt-20 pb-8">
-        <div className="font-funnel text-center text-gray-400">
-          MY PERSONAL QUALITIES
-        </div>
-        <div className="font-sans text-center text-5xl text-white font-extrabold">
+        <div className="font-sans text-center text-5xl text-black dark:text-white font-extrabold">
           Generic
+        </div>
+        <div className="font-funnel text-center text-sm text-cyan-500 dark:text-cyan-600 font-semibold mt-2">
+          MY PERSONAL QUALITIES
         </div>
       </div>
       <SoftSkillsCards skills={softSkills} />

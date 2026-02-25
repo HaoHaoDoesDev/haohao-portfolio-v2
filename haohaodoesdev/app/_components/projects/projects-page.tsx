@@ -48,7 +48,7 @@ const myProjects = [
 
 export default function ProjectsSegment() {
   return (
-    <main id="about" className="relative py-28 px-6 text-black scroll-mt-24">
+    <main id="projects" className="relative py-28 px-6 text-black scroll-mt-24">
         <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
